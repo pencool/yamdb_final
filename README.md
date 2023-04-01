@@ -1,3 +1,4 @@
 # yamdb_final
 
-![example workflow](https://github.com/github/docs/actions/workflows/yamdb_workflow.yml/badge.svg)
+![Workflow Status](https://github.com/pencool/yamdb_final/actions/workflows/yamdb_workflow/badge.svg
+)
