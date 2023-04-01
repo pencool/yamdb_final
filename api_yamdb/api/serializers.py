@@ -3,7 +3,6 @@ from rest_framework import serializers
 from rest_framework.relations import SlugRelatedField
 from rest_framework.validators import UniqueValidator
 from reviews.models import Category, Comment, Genre, Review, Title, User
-
 from api.utils import generate_confirm_code, send_confirm_email
 
 
@@ -37,7 +36,6 @@ class SignupSerializer(serializers.ModelSerializer):
         send_confirm_email(**validated_data)
         user = User.objects.create_user(**validated_data)
         return user
-
 
 class CustomTokenSerializer(serializers.Serializer):
     """Сериалайзер для получения токена"""
