@@ -1,13 +1,3 @@
-from api.filters import TitleFilter
-from api.permissions import (IsAdminPermission, IsAdminOrReadOnly,
-                             IsModeratorPermission,
-                             IsOwnerOrReadOnlyPermission)
-from api.serializers import (CategorySerializer, CommentSerializer,
-                             CustomTokenSerializer, GenreSerializer,
-                             MeUserSerializer, ReviewSerializer,
-                             SignupSerializer, TitleEditSerializer,
-                             TitleReadSerializer, UserSerializer)
-from api.utils import generate_confirm_code
 from django.contrib.auth.tokens import default_token_generator
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
@@ -20,6 +10,17 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import AccessToken
 from reviews.models import Category, Genre, Review, Title, User
+
+from api.filters import TitleFilter
+from api.permissions import (IsAdminOrReadOnly, IsAdminPermission,
+                             IsModeratorPermission,
+                             IsOwnerOrReadOnlyPermission)
+from api.serializers import (CategorySerializer, CommentSerializer,
+                             CustomTokenSerializer, GenreSerializer,
+                             MeUserSerializer, ReviewSerializer,
+                             SignupSerializer, TitleEditSerializer,
+                             TitleReadSerializer, UserSerializer)
+from api.utils import generate_confirm_code
 
 
 class UserViewSet(viewsets.ModelViewSet):

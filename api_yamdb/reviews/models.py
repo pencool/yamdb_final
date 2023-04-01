@@ -1,9 +1,9 @@
 from api.validators import year_validator
+from django.conf import settings
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.core import validators
-from rest_framework import serializers
 from django.db import models
-from django.conf import settings
+from rest_framework import serializers
 
 USER_ROLE_CHOICE = (
     (settings.ADMIN, 'Администратор'),

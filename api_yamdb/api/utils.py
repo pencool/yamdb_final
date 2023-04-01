@@ -1,8 +1,8 @@
 from random import sample
 from string import ascii_letters, digits
 
-from django.core.mail import send_mail
 from django.conf import settings
+from django.core.mail import send_mail
 
 
 def generate_confirm_code():
