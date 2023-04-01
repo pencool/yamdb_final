@@ -1,4 +1,3 @@
 # yamdb_final
 
-![Workflow Status](https://github.com/pencool/yamdb_final/actions/workflows/yamdb_workflow/badge.svg
-)
+![ci workflow](https://github.com/pencool/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
