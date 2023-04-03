@@ -2,4 +2,4 @@
 
 ![ci workflow](https://github.com/pencool/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-IP: 51.250.103.193
+IP: 158.160.22.239
