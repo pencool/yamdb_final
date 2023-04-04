@@ -25,7 +25,7 @@ IP: 84.201.143.17
 Документация доступна по ссылкам ниже после запуска проекта.
 | Redoc |Swagger  |
 |--|--|
-| http://127.0.0.1:8000/redoc/ | http://127.0.0.1:8000/swagger/ |
+| http://84.201.143.17/redoc/ | http://84.201.143.17/swagger/ |
 
 [Также достпна полная документация в Redoc.yaml](https://github.com/pencool/api_yamdb/blob/master/api_yamdb/static/redoc.yaml)
 
