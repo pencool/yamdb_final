@@ -9,11 +9,11 @@ from rest_framework import permissions
 urlpatterns = [
     path('api/', include('api.urls')),
     path('admin/', admin.site.urls),
-    path(
-        'redoc/',
-        TemplateView.as_view(template_name='redoc.html'),
-        name='redoc'
-    ),
+    # path(
+    #     'redoc/',
+    #     TemplateView.as_view(template_name='redoc.html'),
+    #     name='redoc'
+    # ),
 ]
 
 schema_view = get_schema_view(
